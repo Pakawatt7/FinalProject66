@@ -1,5 +1,6 @@
 <template>
     <div class="background-image">
+
     <div class="container-xl">
         <div class="table-responsive">
             <div class="table-wrapper">
@@ -15,6 +16,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="container-fluid ">
                 <table class="table table-striped table-hover table-bordered">
                     <thead>
                         <tr>
@@ -49,12 +51,10 @@
                                         class="material-icons">&#xE872;</i> </a>
                             </td>
                         </tr>
-
-
                     </tbody>
-
                 </table>
             </div>
+        </div>
         </div>
     </div>
 </div>
@@ -103,6 +103,24 @@ export default {
 
 
 <style scoped>
+.background-image {
+    text-align: center;
+    background-image: url('~@/pic/bg1.jpg');
+    opacity: 0.8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.container-fluid {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.table table-striped table-hover table-bordered{
+    background-color: black;
+}
 .view {
     cursor: pointer
 }
@@ -111,16 +129,11 @@ export default {
     cursor: pointer;
 }
 
-.col {
-    background-color: #FFE4B5;
-    width: 100%;
-    margin-bottom: 5px;
-    padding: 20px;
-}
 
 h2 {
-    color: #CD5C5C;
-    font-size: 40px;
+    margin-top: 70px;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
 }
 
 .btn {
@@ -132,6 +145,9 @@ h2 {
     background-color: rgb(134, 213, 134);
     right: 25px;
     bottom: 10px;
+}
+.container-xl{
+    margin-top: 1px;
 }
 </style>
    
