@@ -9,7 +9,7 @@
             <p>Price : <input type="text" v-model="chair.ChairPrice"> </p>
             <p><button type="submit">Create chair</button></p>
         </form>
-         <button v-on:click="navigateTo('/chairs')">กลับ</button>
+         <button v-on:click="navigateTo('/chairs')">ย้อนกลับกลับ</button>
         
         <hr>
     </div>

@@ -34,8 +34,8 @@
                             <td>{{ chair.ChairName }}</td>
                             <td>{{ chair.ChairMaterial }}</td>
                             <td>{{ chair.ChairColor }}</td>
-                            <td>{{ chair.ChairSize }}</td>
-                            <td>{{ chair.ChairPrice }}</td>
+                            <td>{{ chair.ChairSize }} cm</td>
+                            <td>{{ chair.ChairPrice }} baht</td>
                             <td>
                                 <a class="view" title="View" data-toggle="tooltip"
                                     v-on:click="navigateTo('chair/' + chair.id)"><i class="material-icons">&#xE417;</i> </a>

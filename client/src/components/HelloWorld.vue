@@ -1,113 +1,48 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
+  <div class="background-image">
+    <div class="container-fluid">
+
+      <div class="text text-center">
+        <p class="display-4" style="color: #black;">เก้าอี้เก้าใจ</p>
+        <button class="btn btn-primary" v-on:click="navigateTo('/chairs')">เข้าสู่เว็บไซต์</button>
+      </div>
+
+    </div>
   </div>
 </template>
-
+ 
 <script>
 export default {
   name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
-}
+  methods: {
+    navigateTo(route) {
+      this.$router.push(route);
+    },
+  },
+};
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+ 
 <style scoped>
-h1, h2 {
-  font-weight: normal;
+.background-image {
+  text-align: center;
+  background-image: url('~@/pic/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+  /* background-color: black; */
+  height: 100%;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+
+.text {
+  font-size: 50px;
 }
 </style>
+ 

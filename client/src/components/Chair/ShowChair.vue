@@ -1,16 +1,18 @@
 <template>
     <div>
-        <h1>Get Chair By Id</h1>
+        <h1>Detail chair</h1>
         <hr>
-        <p>{{ chair.id }}</p>
-        <p>{{ chair.ChairName }}</p>
-        <p>{{ chair.ChairMaterial }}</p>
-        <p>{{ chair.ChairColor }}</p>
-        <p>{{ chair.ChairSize }}</p>
-        <p>{{ chair.ChairPrice }}</p>
+        
+          <p></p>
+        <p>ID :{{ chair.id }}</p>
+        <p>Name :{{ chair.ChairName }}</p>
+        <p>Material :{{ chair.ChairMaterial }}</p>
+        <p>Color :{{ chair.ChairColor }}</p>
+        <p>Size :{{ chair.ChairSize }} cm</p>
+        <p>Price :{{ chair.ChairPrice }} baht</p>
         <p>
             <button v-on:click="navigateTo('/chair/edit/'+chair.id)">Edit chair</button>
-            <button v-on:click="navigateTo('/chairs')">กลับ</button>
+            <button v-on:click="navigateTo('/chairs')">ย้อนกลับ</button>
         </p>
         <hr>
     </div>

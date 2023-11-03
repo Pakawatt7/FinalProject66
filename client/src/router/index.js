@@ -9,7 +9,6 @@ import UserIndex from "@/components/User/Index";
 import UserCreate from "@/components/User/CreateUser";
 import UserEdit from "@/components/User/EditUser";
 import UserShow from "@/components/User/ShowUser";
-import Login from "@/components/Login";
 
 import ChairIndex from "@/components/Chair/Index";
 import ChairCreate from "@/components/Chair/CreateChair";
@@ -35,6 +34,11 @@ Vue.use(Router);
 
 export default new Router({
   routes: [
+    {
+      path: '/',
+      name: 'HelloWorld',
+      component: HelloWorld
+    },
     {
       path: "/users",
       name: "users",
