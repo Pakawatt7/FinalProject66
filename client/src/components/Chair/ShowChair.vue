@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg-Show">
         <h1>Detail chair</h1>
         <hr>
         
@@ -50,4 +50,17 @@ export default {
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.bg-Show{
+    background-color: #fbe9df;
+    height: 100%;
+    padding: 150px;
+}
+h1{
+    color: #b58274;
+    margin-bottom: 10px;
+    font-size: 50px;
+    text-decoration: underline overline;
+    padding: 5px;
+}
+</style>

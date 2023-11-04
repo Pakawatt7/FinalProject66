@@ -1,23 +1,22 @@
 <template>
     <div class="background-image">
-
         <div class="container-xl">
-            <div class="table-responsive">
+            <div class="">
                 <div class="table-wrapper">
                     <div class="table-bgc">
-                    <div class="table-title">
-                        <div class="row">
-                            <div class="col">
-                                <h2>Chair <b>List</b></h2>
-                                <div class="col-btn">
-                                    <a class="btn btn-secondary" v-on:click="navigateTo('chair/create')"><i
-                                            class="material-icons">&#xE147;</i> <span>Add New Chair</span></a>
+                        <div class="table-title">
+                            <div class="row">
+                                <div class="col">
+                                    <h2><b>CHAIR STORE</b></h2>
+                                    <div class="col-btn">
+                                        <a class="btn btn-secondary" v-on:click="navigateTo('chair/create')"><i
+                                                class="material-icons">&#xE147;</i> <span>Add New Chair</span></a>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="container-fluid ">
+                        <div class="container-fluid ">
                             <table class="table table-striped table-hover table-bordered">
                                 <thead>
                                     <tr>
@@ -38,8 +37,8 @@
                                         <td>{{ chair.ChairName }}</td>
                                         <td>{{ chair.ChairMaterial }}</td>
                                         <td>{{ chair.ChairColor }}</td>
-                                        <td>{{ chair.ChairSize }} cm</td>
-                                        <td>{{ chair.ChairPrice }} baht</td>
+                                        <td>{{ chair.ChairSize }} cm.</td>
+                                        <td>{{ chair.ChairPrice }} baht.</td>
                                         <td>
                                             <a class="view" title="View" data-toggle="tooltip"
                                                 v-on:click="navigateTo('chair/' + chair.id)"><i
@@ -57,7 +56,7 @@
                             </table>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -109,52 +108,59 @@ export default {
 <style scoped>
 .background-image {
     text-align: center;
-    background-image: url('~@/pic/bg1.jpg');
-    opacity: 0.8;
+    background-image: url('~@/pic/bg4.jpg');
+    opacity: 0.9;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
-
+.container-xl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
 .container-fluid {
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-
+.table-bgc {
+    background-color: #fbe9df;
+    border-radius: 20px;
+}
 .view {
-    cursor: pointer
+    color: rgb(179, 84, 16);
 }
-.table-bgc{
-    background-color: rgb(250, 211, 211);
-    margin-top:60px;
+.edit{
+    color: rgb(5, 113, 5);
 }
-
+.delete{
+    color: rgb(210, 42, 42);
+}
 .material-icons {
     cursor: pointer;
 }
-
-
 h2 {
     margin-top: 70px;
-    color: rgb(255, 255, 255);
-    font-size: 45px;
+    color: #b58274;
+    font-size: 50px;
+    text-decoration: underline overline;
+    padding: 5px;
 }
-
 .btn {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
 }
 
 .btn-secondary {
     position: absolute;
-    background-color: rgb(134, 213, 134);
+    background-color:#836953;
     right: 25px;
     bottom: 10px;
 }
 
-.container-xl {
-    margin-top: 1px;
-}</style>
+
+</style>
    

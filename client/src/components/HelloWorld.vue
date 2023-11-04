@@ -25,7 +25,7 @@ export default {
 <style scoped>
 .background-image {
   text-align: center;
-  background-image: url('~@/pic/bg.jpg');
+  background-image: url('~@/pic/bg4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;

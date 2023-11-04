@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h1>Edit User</h1>
+    <div class="bg-edit">
+        <h1>EDIT CHAIR</h1>
         <form v-on:submit.prevent="editChair">
           <p>Name : <input type="text" v-model="chair.ChairName"></p>
           <p>Material : <input type="text" v-model="chair.ChairMaterial"> </p>
@@ -11,6 +11,13 @@
           <button v-on:click="navigateTo('/chairs')">ย้อนกลับ</button>
       </form>
         <hr>
+        <h5>Display Example By Id</h5>
+        <p>ID :{{ chair.id }}</p>
+        <p>Name :{{ chair.ChairName }}</p>
+        <p>Material :{{ chair.ChairMaterial }}</p>
+        <p>Color :{{ chair.ChairColor }}</p>
+        <p>Size :{{ chair.ChairSize }} cm</p>
+        <p>Price :{{ chair.ChairPrice }} baht</p>
     </div>
 </template>
 
@@ -57,4 +64,22 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.bg-edit{
+  background-color: #fbe9df;
+    height: 100%;
+    padding: 150px;
+}
+h1{
+  color: #b58274;
+  margin-bottom: 15px;
+  font-size: 50px;
+  text-decoration: underline overline;
+  padding: 5px;
+}
+h5{
+  color: #b58274;
+  text-decoration: underline;
+  background-color: #fbe9df;
+}
+</style>

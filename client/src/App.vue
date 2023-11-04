@@ -16,16 +16,16 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 0%;
+  color: #142535;
+  box-sizing: content-box;
 }
 button{
-  background-color: #ADD496;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: #D2A599;
+  box-shadow: 0 8px 16px 0 rgba(253, 239, 239, 0.503);
   border-radius: 5px;
-  border-color: #577460;
+  border-color: #000000;
 }
 button:hover {
-  box-shadow: 0 10px 12px 0 rgba(0,0,0,0.25);
-}
+  box-shadow: 0 3px 5px 0 #836953}
+
 </style>
