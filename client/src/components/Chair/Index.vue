@@ -1,63 +1,67 @@
 <template>
     <div class="background-image">
 
-    <div class="container-xl">
-        <div class="table-responsive">
-            <div class="table-wrapper">
-                <div class="table-title">
-                    <div class="row">
-                        <div class="col">
-                            <h2>Chair <b>List</b></h2>
-                            <div class="col-btn">
-                                <a class="btn btn-secondary" v-on:click="navigateTo('chair/create')"><i
-                                        class="material-icons">&#xE147;</i> <span>Add New Chair</span></a>
+        <div class="container-xl">
+            <div class="table-responsive">
+                <div class="table-wrapper">
+                    <div class="table-bgc">
+                    <div class="table-title">
+                        <div class="row">
+                            <div class="col">
+                                <h2>Chair <b>List</b></h2>
+                                <div class="col-btn">
+                                    <a class="btn btn-secondary" v-on:click="navigateTo('chair/create')"><i
+                                            class="material-icons">&#xE147;</i> <span>Add New Chair</span></a>
 
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="container-fluid ">
+                            <table class="table table-striped table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name <i class=""></i></th>
+                                        <th>Material</th>
+                                        <th>Color <i class=""></i></th>
+                                        <th>Size(W,l,h)</th>
+                                        <th>Price <i class=""></i></th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+
+                                    <tr v-for="chair in chairs" v-bind:key="chair.id">
+                                        <td>{{ chair.id }}</td>
+                                        <td>{{ chair.ChairName }}</td>
+                                        <td>{{ chair.ChairMaterial }}</td>
+                                        <td>{{ chair.ChairColor }}</td>
+                                        <td>{{ chair.ChairSize }} cm</td>
+                                        <td>{{ chair.ChairPrice }} baht</td>
+                                        <td>
+                                            <a class="view" title="View" data-toggle="tooltip"
+                                                v-on:click="navigateTo('chair/' + chair.id)"><i
+                                                    class="material-icons">&#xE417;</i> </a>
+
+                                            <a class="edit" title="Edit" data-toggle="tooltip"
+                                                v-on:click="navigateTo('chair/edit/' + chair.id)"><i
+                                                    class="material-icons">&#xE254;</i> </a>
+
+                                            <a class="delete" title="Delete" data-toggle="tooltip"
+                                                v-on:click="deleteChair(chair)"><i class="material-icons">&#xE872;</i> </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="container-fluid ">
-                <table class="table table-striped table-hover table-bordered">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Name <i class=""></i></th>
-                            <th>Material</th>
-                            <th>Color <i class=""></i></th>
-                            <th>Size(W,l,h)</th>
-                            <th>Price <i class=""></i></th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-
-                        <tr v-for="chair in chairs" v-bind:key="chair.id">
-                            <td>{{ chair.id }}</td>
-                            <td>{{ chair.ChairName }}</td>
-                            <td>{{ chair.ChairMaterial }}</td>
-                            <td>{{ chair.ChairColor }}</td>
-                            <td>{{ chair.ChairSize }} cm</td>
-                            <td>{{ chair.ChairPrice }} baht</td>
-                            <td>
-                                <a class="view" title="View" data-toggle="tooltip"
-                                    v-on:click="navigateTo('chair/' + chair.id)"><i class="material-icons">&#xE417;</i> </a>
-
-                                <a class="edit" title="Edit" data-toggle="tooltip"
-                                    v-on:click="navigateTo('chair/edit/'+chair.id)"><i
-                                        class="material-icons">&#xE254;</i> </a>
-
-                                <a class="delete" title="Delete" data-toggle="tooltip" v-on:click="deleteChair(chair)"><i
-                                        class="material-icons">&#xE872;</i> </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
-        </div>
     </div>
-</div>
 </template>
 
 <script>
@@ -111,6 +115,7 @@ export default {
     background-repeat: no-repeat;
     height: 100vh;
 }
+
 .container-fluid {
     margin-top: 50px;
     display: flex;
@@ -118,11 +123,13 @@ export default {
     align-items: center;
     text-align: center;
 }
-.table table-striped table-hover table-bordered{
-    background-color: black;
-}
+
 .view {
     cursor: pointer
+}
+.table-bgc{
+    background-color: rgb(250, 211, 211);
+    margin-top:60px;
 }
 
 .material-icons {
@@ -146,8 +153,8 @@ h2 {
     right: 25px;
     bottom: 10px;
 }
-.container-xl{
+
+.container-xl {
     margin-top: 1px;
-}
-</style>
+}</style>
    
