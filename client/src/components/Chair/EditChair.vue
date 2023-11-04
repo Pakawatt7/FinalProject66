@@ -5,8 +5,8 @@
           <p>Name : <input type="text" v-model="chair.ChairName"></p>
           <p>Material : <input type="text" v-model="chair.ChairMaterial"> </p>
           <p>Color : <input type="text" v-model="chair.ChairColor"> </p>
-          <p>Size : <input type="text" v-model="chair.ChairSize"> </p>
-          <p>Price : <input type="text" v-model="chair.ChairPrice"> </p>
+          <p>Size : <input type="text" v-model="chair.ChairSize"> cm.</p>
+          <p>Price : <input type="text" v-model="chair.ChairPrice"> baht</p>
           <p><button type="submit">Edit chair</button></p>
           <button v-on:click="navigateTo('/chairs')">ย้อนกลับ</button>
       </form>
@@ -68,13 +68,13 @@ export default {
 .bg-edit{
   background-color: #fbe9df;
     height: 100%;
-    padding: 150px;
+    padding: 100px;
 }
 h1{
   color: #b58274;
   margin-bottom: 15px;
   font-size: 50px;
-  text-decoration: underline overline;
+  text-decoration: underline ;
   padding: 5px;
 }
 h5{

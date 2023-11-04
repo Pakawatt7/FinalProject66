@@ -147,7 +147,7 @@ h2 {
     margin-top: 70px;
     color: #b58274;
     font-size: 50px;
-    text-decoration: underline overline;
+    text-decoration: underline ;
     padding: 5px;
 }
 .btn {

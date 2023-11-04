@@ -3,8 +3,8 @@
     <div class="container-fluid">
 
       <div class="text text-center">
-        <p class="display-4" style="color: #black;">เก้าอี้เก้าใจ</p>
-        <button class="btn btn-primary" v-on:click="navigateTo('/chairs')">เข้าสู่เว็บไซต์</button>
+        <p class="display-4">THE</p> <p class="brownfont">CHAIR STORE</p> <p class="display-4">PAKAWAT</p>
+        <button class="btn btn-primary" v-on:click="navigateTo('/chairs')">Go to CRUD</button>
       </div>
 
     </div>
@@ -40,9 +40,23 @@ export default {
   /* background-color: black; */
   height: 100%;
 }
-
+.display-4{
+  font-size:50px;
+  font-weight: bold;
+  border-color: #D2A599;
+  border-width: 5px;
+  color: #752d18;
+}
+.brownfont{
+  color: #F0F4BF;
+  font-weight: bold;
+}
 .text {
   font-size: 50px;
+}
+.btn-primary{
+  background-color: #D2A599;
+  border-color:whitesmoke ;
 }
 </style>
  
