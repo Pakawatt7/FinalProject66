@@ -48,7 +48,7 @@ export default {
 .Box-Create{
     background-color: #fbe9df;
     height: 100%;
-    padding: 100vh;
+   
 }
 h1{
     color: #b58274;
