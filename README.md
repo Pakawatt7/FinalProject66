@@ -1,5 +1,5 @@
 # FinalProject66
-Chair Model for You <hr>
+Chair Model for You
 <hr>
 Pakawat Srisamrong
 
