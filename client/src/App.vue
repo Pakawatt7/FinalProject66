@@ -26,6 +26,7 @@ button{
   border-color: #000000;
 }
 button:hover {
-  box-shadow: 0 3px 5px 0 #836953}
+  box-shadow: 0 3px 5px 0 #836953
+}
 
 </style>

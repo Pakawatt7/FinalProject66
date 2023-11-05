@@ -47,7 +47,10 @@ export default {
 <style scoped>
 .Box-Create{
     background-color: #fbe9df;
-    height: 100%;
+    height: 100vh;
+    margin-top: 5px;
+    padding: 80px;
+
    
 }
 h1{
