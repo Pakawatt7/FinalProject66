@@ -2,8 +2,8 @@
 Chair Model for You
 <hr>
 <h1 style="color:purple;">Hello World</h1>
--Pakawat Srisamrong
+-
 
-<code style="color : auq">text</code>
+<code style="color : auq">Pakawat Srisamrong</code>
 
 
