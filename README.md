@@ -4,6 +4,6 @@ Chair Model for You
 <h1 style="color:purple;">Hello World</h1>
 -Pakawat Srisamrong
 
-
+<code style="color : auq">text</code>
 
 
